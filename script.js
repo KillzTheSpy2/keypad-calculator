@@ -63,9 +63,9 @@ document.getElementById("submit").addEventListener('click', () => {
     z = Number((x - y));
 
     // Pattern Logic
-    if (z <= 0.5) {
+    if (z <= 0) {
         order = "1234";
-    } else if (0.5 < z && z <= 19.5) {
+    } else if (z >= 0.5 && z <= 19.5) {
         order = "1243";
     } else if (20 < z && z <= 49.5) {
         order = "4321";
