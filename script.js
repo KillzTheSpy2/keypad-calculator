@@ -13,44 +13,44 @@ document.getElementById("submit").addEventListener('click', () => {
     // btn 1 calc
     if (btn1 < 10) {
         x = 15;
-    } else if (btn1 < 20 && btn1 >= 10) {
+    } else if (btn1 < 20 && btn1 > 10) {
         x = 20;
-    } else if (btn1 < 80 && btn1 >= 20) {
+    } else if (btn1 < 80 && btn1 > 20) {
         x = 30;
-    } else if (btn1 >= 80) {
+    } else {
         x = 10;
     }
 
     // btn 2 calc
     if (btn2 < 10) {
         x += 10;
-    }else if (btn2 < 20 && btn2 >= 10) {
+    }else if (btn2 < 20 && btn2 > 10) {
         x *= 2;
-    }else if (btn2 < 80 && btn2 >= 20) {
+    }else if (btn2 < 80 && btn2 > 20) {
         x *= 3;
-    } else if (btn2 >= 80) {
+    } else {
         x -= 10;
     }
 
     // btn 3 calc
     if (btn3 < 10) {
         x *= 2;
-    } else if (btn3 < 20 && btn3 >= 10) {
+    } else if (btn3 < 20 && btn3 > 10) {
         x *= 3;
-    } else if (btn3 < 80 && btn3 >= 20) {
+    } else if (btn3 < 80 && btn3 > 20) {
         x -= 5;
-    } else if (btn3 >= 80) {
+    } else {
         x = x;
     }
 
     // btn 4 calc
     if (btn4 < 10) {
         x *= 2;
-    } else if (btn4 < 20 && btn4 >= 10) {
+    } else if (btn4 < 20 && btn4 > 10) {
         x += 20;
-    } else if (btn4 < 80 && btn4 >= 20) {
+    } else if (btn4 < 80 && btn4 > 20) {
         x += 50;
-    } else if (btn4 >= 80) {
+    } else {
         x *= 3;
     }
 
@@ -65,11 +65,11 @@ document.getElementById("submit").addEventListener('click', () => {
     // Pattern Logic
     if (z <= 0) {
         order = "1234";
-    } else if (z >= 0.5 && z <= 19.5) {
+    } else if (0.5 <= z && z <= 19.5) {
         order = "1243";
-    } else if (20 < z && z <= 49.5) {
+    } else if (20 <= z && z <= 49.5) {
         order = "4321";
-    } else if (50 < z && z <= 89.5) {
+    } else if (50 <= z && z <= 89.5) {
         order = "2413";
     } else if (z >= 90) {
         order = "3124";
